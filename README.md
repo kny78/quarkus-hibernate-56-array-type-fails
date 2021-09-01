@@ -2,6 +2,15 @@
 
 This project illustrates that Hibernate-types fails for Quarkus 2.2.1.Final, but not Quarkus 2.1.1.Final
 
+## Create test database:
+
+In PostgreSQL:
+```
+create user hibbefails;
+create database hibbefails owner hibbefails;
+alter user hibbefails with password 'hibbefails';
+```
+
 ## Runs ok with 2.1.1.Final
 
 Start the container with 2.1.1
